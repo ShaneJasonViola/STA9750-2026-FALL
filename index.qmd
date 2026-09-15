@@ -1,0 +1,72 @@
+---
+title: "Shane Viola"
+---
+
+## About Me
+
+I am a graduate student at Baruch College pursuing an M.S. in Business Analytics. I currently work in financial planning and analysis at NYCHA, where I focus on budgeting, forecasting, financial modeling, and process improvement.
+
+My background combines finance, analytics, and technology. I am especially interested in using data, automation, and analytical tools to improve decision-making and streamline financial processes.
+
+## Experience
+
+I currently work as an Economist/Supervisor at NYCHA, where I support financial planning and analysis for the Section 8 program. My work includes forecasting, budget analysis, revenue and expense modeling, and developing tools that improve reporting and planning processes.
+
+## Education
+
+**Baruch College**  
+M.S. in Artificial Intelligence and Business Analytics | Expected 2028
+
+## Baruch College
+
+I am currently pursuing my M.S. in Artificial Intelligence and Business Analytics at Baruch College.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+if(!require("leaflet")){
+    options(repos=c(CRAN="https://cloud.r-project.org"))
+    install.packages("leaflet")
+    stopifnot(require("leaflet"))
+}
+
+baruch_longitude <- -73.98333
+baruch_latitude  <- +40.74028
+
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude, 
+            "I am a Master's student at <b>Baruch College</b>!")
+```
+
+**SUNY Old Westbury**  
+B.S. in Finance | 2022  
+GPA: 4.00/4.00
+
+## Skills
+
+- Advanced Excel
+- SQL
+- R
+- Python
+- Power BI
+- Power Query
+- VBA
+- Financial Modeling
+- Forecasting
+- Data Analysis
+- Process Automation
+
+
+
+```{r}
+#| include: false
+1+1
+```
+
+--------------
+
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
