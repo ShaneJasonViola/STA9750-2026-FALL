@@ -10,7 +10,7 @@ website:
   navbar:
     background: primary
     search: false
-    
+
 format:
   html:
     theme: sandstone
